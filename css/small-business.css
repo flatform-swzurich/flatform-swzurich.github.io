@@ -29,6 +29,17 @@ footer {
 }
 
 
+
+@media(max-width:768px) {
+    .rondelll{
+        display: none;
+    }
+    .line2{
+        display: none;
+    }
+}
+
+
 @media(min-width:768px) {
     body {
         padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
@@ -50,13 +61,12 @@ footer {
 
 .line2 {
     z-index: 99;
-    width: 612px;
+    width: 712px;
     height: 47px;
-      position: fixed;
-
-    border-bottom: 14px solid red;
-    -webkit-transform: translateY(26px) translateX(-27px) rotate(-26deg);
-    /*position: absolute;*/
-    top: 2%;
-    left: 1%;
+    position: relative;
+    border-bottom: 4px solid red;
+    -webkit-transform: translateY(66px) translateX(-27px) rotate(-26deg);
+    /* position: absolute; */
+    top: 240px;
+    left: -4%;
 }   
