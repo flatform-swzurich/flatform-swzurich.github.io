@@ -20,6 +20,15 @@ footer {
     padding: 30px 0;
 }
 
+.mailthingy {
+    border: 2px solid;
+    border-radius: 9px;
+    line-height: 29px;
+    width: 201px;
+
+}
+
+
 @media(min-width:768px) {
     body {
         padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
@@ -31,3 +40,21 @@ footer {
 }
 
 
+.background {
+/*    background-color: #BCBCBC;*/
+    width: 700px;
+    height: 50px;
+    padding: 0; 
+    margin: 0
+} 
+
+.line2 {
+    z-index: 1999;
+    width: 612px;
+    height: 47px;
+    border-bottom: 14px solid red;
+    -webkit-transform: translateY(26px) translateX(-27px) rotate(-26deg);
+    position: absolute;
+    top: 297px;
+    left: 438px;
+}   
