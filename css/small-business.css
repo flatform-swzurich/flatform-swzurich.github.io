@@ -6,6 +6,7 @@
 
 body {
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+    
 }
 
 .navbar-fixed-top .nav {
@@ -67,6 +68,6 @@ footer {
     border-bottom: 4px solid red;
     -webkit-transform: translateY(66px) translateX(-27px) rotate(-26deg);
     /* position: absolute; */
-    top: 270px;
+    top: 323px;
     left: -4%;
 }   
