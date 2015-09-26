@@ -49,12 +49,14 @@ footer {
 } 
 
 .line2 {
-    z-index: 1999;
+    z-index: 99;
     width: 612px;
     height: 47px;
+      position: fixed;
+
     border-bottom: 14px solid red;
     -webkit-transform: translateY(26px) translateX(-27px) rotate(-26deg);
-    position: absolute;
-    top: 32%;
-    left: 16%;
+    /*position: absolute;*/
+    top: 2%;
+    left: 1%;
 }   
