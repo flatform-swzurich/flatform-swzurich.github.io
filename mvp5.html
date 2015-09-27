@@ -1,0 +1,42 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js">
+
+<h1 style="font-family:Arial">FlatForm - the form to get your flat instantly!</h1>   
+<style>
+.box{
+    display: flex;
+}
+
+.txt{
+    margin: 0 0 0 50px;
+}
+</style>   
+<script type="text/javascript"> 
+  $(document).ready(function () {
+
+        $("#button2").click(
+            function () {
+                AlertSave();
+            }            
+        );
+    });
+
+function AlertSave() {
+   alert("Alert Message OnClick");
+}
+
+</script>
+<div id="box">
+        <p id="x">ksdjfksjdfklsj</p>
+    <object id="pdf" data='4.pdf' type="application/pdf" width="45%" height="700">
+    alt : <a href="test.pdf">test.pdf</a>
+    </object>
+    <input type="button" id="button" value="Click Me" />
+<input type="button" id="button2" value="Click Me 2" />
+    </div>
+</div> 
+</body>
+</html>

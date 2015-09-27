@@ -3,22 +3,57 @@
 <script src="https://fb.me/react-0.13.3.js"></script>
 <!-- In-browser JSX transformer, remove when pre-compiling JSX. -->
 <script type="text/javascript" src="https://fb.me/JSXTransformer-0.13.3.js"></script>
-<h1>FlatForm - the form to get your flat instantly!</h1>   
-<script type="text/jsx">  
+<h1 style="font-family:Arial">FlatForm - the form to get your flat instantly!</h1>   
+<style>
+.box{
+    display: flex;
+}
+
+.txt{
+    margin: 0 0 0 40px;
+}
+</style>
+
+<script type="text/jsx">
+    var B = React.createClass({
+      getInitialState: function() {
+        return {liked: false};
+      },
+      handleClick: function(event) {
+        this.setState({liked: !this.state.liked});
+      },
+      render: function() {
+        var text = this.state.liked ? 'like' : 'haven\'t liked';
+        return (
+          <p onClick={this.handleClick}>
+            You {text} this. Click to toggle.
+          </p>
+        );
+      }
+    }); 
+
     var a = '1';
-    // var xc = <p style={{position:'relative', top:40, left:40}}>jklskfjsxxxxxklfjklskfjsxxxxxklfjklskfjsxxxxxklfjklskfjsxxxxxklfjklskfjsxxxxxklfjklskfjsxxxxxklfjklskfjsxxxxxklfjklskfjsxxxxxklfjklskfjsxxxxxklfjklskfjsxxxxxklfjklskfjsxxxxxklfjklskfjsxxxxxklfjklskfjsxxxxxklfjklskfjsxxxxxklfjklskfjsxxxxxklfjklskfjsxxxxxklfjklskfjsxxxxxklfjklskfjsxxxxxklfjklskfjsxxxxxklfjklskfjsxxxxxklfjklskfjsxxxxxklfjklskfjsxxxxxklfjklskfjsxxxxxklfjklskfjsxxxxxklfjklskfjsxxxxxklfjklskfjsxxxxxklfjklskfjsxxxxxklfjklskfjsxxxxxklfjklskfjsxxxxxklfjklskfjsxxxxxklfjklskfjsxxxxxklfjklskfjsxxxxxklf</p>;
-    var x = <h1>Hello World</h1>;
+    var file = '4.pdf';
+    var x = <div className="txt">
+                <a href="#" >one</a>
+                <a href="#" >two</a> 
+                {B} 
+            </div>
     var y = 
-        <div>
-            <object data="4.pdf" type="application/pdf" width="45%" height="700">
-            alt : <a href="test.pdf">test.pdf</a>
-            </object>
-        </div>;
-    React.render(y, document.body);
-    // React.render(y, document.getElementById('id'));
+            <div className="box">
+                <object data={file} type="application/pdf" width="45%" height="700">
+                alt : <a href="test.pdf">test.pdf</a>
+                </object>
+                {x}
+            </div>;
+
+    React.render(y, document.getElementById('one'));
+    // React.render(x, document.getElementById('two'));
 
 </script>
 <body>
   <div id="one">
+  </div>
+  <div id="two">
   </div>
 </body>

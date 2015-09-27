@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+<div style="display:flex;">
+	<!-- <img height="40px" width="150px" src="img/small_logo.png"> -->
+	<h1 style="font-family:Arial">FlatForm - the form to get your flat instantly!</h1>    
+</div>
+<style>
+	body {
+	  font-family: Helvetica, Arial, Sans-Serif;
+	}
+
+	.box{
+	    display: flex;
+	    flex-basis:700px;
+	    flex-wrap:wrap;
+	}
+
+	.txt{
+	    margin: 0 0 0 50px;
+	    display: flex;
+	    flex-basis:440px;
+	    flex-direction:column;
+	}
+	.txt a {
+		margin-bottom:5px;
+		color: #666;
+		font-size:18px;
+	}
+	.inputs{
+	    display: flex;
+        flex-direction: column;
+	}
+	.item{	
+	    line-height: 18px;
+	    font-size: 19px;
+	    margin-bottom:10px;
+	}
+
+	#thebtn{
+	    height: 60px;
+	    font-size: 30px;
+	}
+</style>   
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+var ystr = "4.pdf";
+$(document).ready(function(){
+    $("#link2").click(function(){
+        $("#pdf").attr("data", '4.pdf');
+    });
+    $(".linkthis").click(function(){
+        $("#pdf").attr("data", 'bettig.pdf');
+    });
+    $("#thebtn").click(function(){
+    	console.log("x");	
+        $("#pdf").attr("data", 'bettigneu.pdf');
+    });
+});
+</script>
+</head>
+
+<body>
+	<div class="box">
+		<div class="txt">
+			<a href="#" class="link">Aebi Immobilienberatung GmbH in Opfikon, GmbH</a>
+			<a href="#" class="link">Albis Immobilien \& Verwaltungen GmbH in Horgen, GmbH </a>
+			<a href="#" class="link">Arché Immobilien Schweiz GmbH in Zürich, GmbH</a>
+			<a href="#" id="link2">Arlas Immobilien GmbH in Zürich, GmbH</a>
+			<a href="#" class="link">Astor Immobilien GmbH in Volketswil, GmbH</a>
+			<a href="#" class="link">Aussersihl Immobilien GmbH in Zürich, GmbH</a>
+			<a href="#" class="link">AW Immobilien GmbH in Dübendorf, GmbH, </a>
+			<a href="#" class="link">AWZ Immobilien GmbH in Liquidation in Stäfa, GmbH</a>
+			<a href="#" class="link">Axixa Immobilien GmbH in Bassersdorf, GmbH, </a>
+			<a href="#" class="link">AZ Immobilien und Verwaltungen GmbH in Zürich, GmbH</a>
+			<a href="#" class="link">B + W Immobilien GmbH in Zürich, GmbH</a>
+			<a href="#" class="linkthis">Bättig Immobilienberatung GmbH in Buchs (ZH), GmbH</a>
+			<a href="#" class="link">Baumgartner Immobilien-Management GmbH in Zürich, GmbH</a>
+			<a href="#" class="link">BEGA Immobilien GmbH in Kloten, GmbH</a>
+			<a href="#" class="link">Berghalde Immobilien GmbH in Maur, GmbH</a>
+			<a href="#" class="link">Berwert Immobilien GmbH in Wila, GmbH</a>
+			<a href="#" id="link">Besser Immobilien GmbH in Dietikon, GmbH</a>
+			<a href="#" id="link">BFP Bernhard Frei & Partner Immobilientreuhand GmbH in Zürich, GmbH</a>
+			<a href="#" id="link">Bichet Immobilien GmbH in Zürich, GmbH</a>
+			<a href="#" id="link">Binder Immobilientreuhand und Verwaltungen GmbH in Neerach, GmbH</a>
+			<a href="#" id="link">Blaser Immobilienmanagement GmbH in Küsnacht (ZH), GmbH, </a>
+			<a href="#" id="link">Blum Bau & Immobilien GmbH in Winterthur, GmbH, </a>
+			<a href="#" id="link">Bonardi Immobilien GmbH in Zürich, GmbH</a>
+			<a href="#" id="link">Bonello & Partner Immobilien GmbH in Oberengstringen, GmbH</a>
+			<a href="#" id="link">Breitenmoser Immobilien GmbH in Erlenbach (ZH), GmbH</a>
+			<a href="#" id="link">Brunner-Anliker Immobilien GmbH in Kloten, GmbH</a>
+			<a href="#" id="link">Brunold Immobilien GmbH in Seuzach, GmbH</a>
+			<a href="#" id="link">Bühler Immobilien GmbH in Oberrieden, GmbH</a>
+			<a href="#" id="link">Burg Immobilien und Treuhand GmbH in Zürich, GmbH</a>
+			<a href="#" id="link">Bürke + Partner Immobilienberatung GmbH in Aesch (ZH), GmbH</a>
+			<a href="#" id="link">Buxbaum Immobilienservice GmbH in Liquidation in Bülach, GmbH</a>
+			<a href="#" id="link">C.I.I. GmbH Immobilien Investment Consultants in Zürich, GmbH, +, CHE-113.079.684, PDF</a>
+			<a href="#" id="link">California Immobilien GmbH in Zürich, GmbH, +, CHE-112.678.043, PDF</a>
+			<a href="#" id="link">CAP Immobilien GmbH in Oberrieden, GmbH, +, CHE-166.075.992, PDF</a>
+			<a href="#" id="link">Caruso & Partner Immobilien GmbH in Bülach, GmbH, +++, CHE-112.850.649, PDF</a>
+			<a href="#" id="link">Christen Immobilien GmbH in Illnau-Effretikon, GmbH, +, CHE-110.201.026, PDF</a>
+			<a href="#" id="link">Concento Immobilien GmbH in Winterthur, GmbH, +++, CHE-230.770.954, PDF</a>
+			<a href="#" id="link">Consulta Immobilien GmbH in Zürich, GmbH, +++, CHE-318.748.200, PDF</a>
+			<a href="#" id="link">CORE Immobilien GmbH Vermittlung & Verkauf in Küsnacht (ZH), GmbH, +++, CHE-429.821.557, PDF</a>
+			<a href="#" id="link">CSP Immobilien GmbH in Dübendorf, GmbH, +++, CHE-111.999.295, PDF</a>
+			<a href="#" id="link">D.K. Müller Immobilien GmbH in Liquidation in Zürich, GmbH, +, CHE-227.224.349, PDF</a>
+			<a href="#" id="link">Dalpont Immobilien GmbH in Illnau-Effretikon, GmbH, +++, CHE-419.173.194, PDF</a>
+			<a href="#" id="link">Delta Immobilien GmbH in Dietikon, GmbH, +, CHE-269.299.809, PDF</a>
+			<a href="#" id="link">Dettwyler Immobilien GmbH in Küsnacht (ZH), GmbH, +++, CHE-110.614.322, PDF</a>
+			<a href="#" id="link">DeVau Immobilien GmbH in Wiesendangen, GmbH, +++, CHE-114.811.270, PDF</a>
+			<a href="#" id="link">DG Immobilien GmbH in Bülach, GmbH, +, CHE-451.897.455, PDF</a>
+			<a href="#" id="link">Dieter Steiger Immobilien GmbH in Stäfa, GmbH, +++, CHE-116.187.258, PDF</a>
+			<a href="#" id="link">Dietz Immobilien GmbH in Zürich, GmbH, +, CHE-115.200.229, PDF</a>
+			<a href="#" id="link">DM SWISS IMMOBILIEN GMBH in Dietikon, GmbH, +++, CHE-108.546.970, PDF</a>
+			<a href="#" id="link">dober immobilien gmbh in Winkel, GmbH, +, CHE-196.232.486, PDF</a>
+			<a href="#" id="link">Dom VG Immobilien und Treuhand GmbH in Opfikon, GmbH, +++, CHE-114.112.255, PDF</a>
+			<a href="#" id="link">Domino Immobilien GmbH in Zollikon, GmbH, +++, CHE-103.884.744, PDF</a>
+			<a href="#" id="link">DSP Immobilien GmbH in Zürich, GmbH, +++, CHE-136.962.948, PDF</a>
+			<a href="#" id="link">Edelweiss Immobilien & Verwaltungs GmbH in Dielsdorf, GmbH, +++, CHE-112.446.981, PDF</a>
+			<a href="#" id="link">Ehrler Immobilien GmbH in Winkel, GmbH, +++, CHE-112.445.183, PDF</a>
+			<a href="#" id="link">eins Immobilien GmbH in Dübendorf, GmbH, +++, CHE-486.062.304, PDF</a>
+			<a href="#" id="link">Ela Immobilien und Bau GmbH in Weisslingen, GmbH, +, CHE-245.560.064, PDF</a>
+			<a href="#" id="link">Elcona Immobilien GmbH in Zürich, GmbH, +, CHE-362.436.052, PDF</a>
+			<a href="#" id="link">Elliscasis Immobilien GmbH in Wetzikon (ZH), GmbH, +++, CHE-104.510.393, PDF</a>
+			<a href="#" id="link">ERL Immobilien GmbH in Liquidation in Zollikon, GmbH, +++, CHE-110.226.173, PDF</a>
+			<a href="#" id="link">FEDA Immobilien GmbH in Gossau (ZH), GmbH, +, CHE-276.189.557, PDF</a>
+			<a href="#" id="link">Felder & Höfliger Immobilien GmbH in Zürich, GmbH, +++, CHE-113.311.817, PDF</a>
+			<a href="#" id="link">Finastra Immobilien GmbH in Wallisellen, GmbH, +++, CHE-110.600.840, PDF</a>
+			<a href="#" id="link">Findyourhome Immobilien Portal GmbH in Küsnacht (ZH), GmbH, +++, CHE-115.201.097, PDF</a>
+			<a href="#" id="link">Fleig Immobilien GmbH in Zürich, GmbH, +++, CHE-453.274.940, PDF</a>
+			Flückiger & Corvaglia Immobilien GmbH in Wallisellen, GmbH, +++, CHE-114.703.692, PDF</a>
+			<a href="#" class="link">Foris Immobilien GmbH in Thalwil, GmbH, +++, CHE-115.147.629, PDF</a>
+			<a href="#" class="link">Fortuna Immobilien GmbH in Zürich, GmbH, +, CHE-161.285.192, PDF</a>
+			<a href="#" class="link">Frigolino Immobilien GmbH in Höri, GmbH, +, CHE-499.428.432, PDF</a>
+			<a href="#" class="link">FrontWeb Immobilien GmbH in Zürich, GmbH, +, CHE-154.581.722, PDF</a>
+		</div>
+
+	    <object id="pdf" data='1.pdf' type="application/pdf" width="45%" height="900">
+	    alt : <a href="test.pdf">test.pdf</a>
+	    </object>
+		<div style="margin-left:10px">
+			<img height="320px" width="240px" src="img/login.png">
+			<div class="inputs">
+				<center>OR:</center>
+				<input class="item" placeholder="firstname" type="text"></input>
+				<input class="item" placeholder="lastname" type="text"></input>
+				<input class="item" placeholder="birthday" type="text"></input>
+				<button id="thebtn" class="btn">Fill form.</button>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

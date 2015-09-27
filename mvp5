@@ -1,0 +1,43 @@
+
+<!-- The core React library -->
+<script src="https://fb.me/react-0.13.3.js"></script>
+<!-- In-browser JSX transformer, remove when pre-compiling JSX. -->
+<script type="text/javascript" src="https://fb.me/JSXTransformer-0.13.3.js"></script>
+<h1 style="font-family:Arial">FlatForm - the form to get your flat instantly!</h1>   
+<style>
+.box{
+    display: flex;
+}
+
+.txt{
+    margin: 0 0 0 40px;
+}
+</style>
+
+<script type="text/jsx">
+    function log(){
+        console.log("test");
+    };
+    var a = '1';
+    var file = '4.pdf';
+    var x = <div className="txt">
+                <a href="#" onClick={log()}>one</a>  
+            </div>
+    var y = 
+            <div className="box">
+                <object data={file} type="application/pdf" width="45%" height="700">
+                alt : <a href="test.pdf">test.pdf</a>
+                </object>
+                {x}
+            </div>;
+
+    React.render(y, document.getElementById('one'));
+    // React.render(x, document.getElementById('two'));
+
+</script>
+<body>
+  <div id="one">
+  </div>
+  <div id="two">
+  </div>
+</body>
